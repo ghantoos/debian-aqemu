@@ -1,0 +1,11 @@
+aqemu (0.7.2-2) unstable; urgency=low
+
+  * Updated the debian/copyright file, adding the additional copyright holders.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Sat, 26 Sep 2009 16:22:20 +0200
+
+aqemu (0.7.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #521191)
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Thu, 24 Sep 2009 10:57:24 +0200

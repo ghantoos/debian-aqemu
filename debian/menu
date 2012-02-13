@@ -1,0 +1,6 @@
+?package(aqemu):needs="X11" section="Applications/Emulators"\
+  title="aqemu" command="/usr/bin/aqemu" \
+  longtitle="Front-end for QEMU" \
+  icon16x16="/usr/share/pixmaps/aqemu-16x16.xpm" \
+  icon32x32="/usr/share/pixmaps/aqemu-32x32.xpm" \
+  icon="/usr/share/pixmaps/aqemu-32x32.xpm"

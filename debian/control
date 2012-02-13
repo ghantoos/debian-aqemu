@@ -1,0 +1,16 @@
+Source: aqemu
+Section: x11
+Priority: optional
+Maintainer: Ignace Mouzannar <mouzannar@gmail.com>
+Build-Depends: debhelper (>= 7), dpatch, libvncserver-dev, libqt4-dev (>= 4.4), zlib1g-dev
+Standards-Version: 3.8.3
+
+Package: aqemu
+Architecture: any
+Homepage: http://aqemu.sourceforge.net/
+Depends: qemu, ${shlibs:Depends}, ${misc:Depends}
+Description: Qt4 front-end for QEMU and KVM
+ aqemu is a Qt4 graphical interface used to manage QEMU and KVM virtual
+ machines. It has a user-friendly interface and allows to set up the majority
+ of QEMU and KVM options.
+
