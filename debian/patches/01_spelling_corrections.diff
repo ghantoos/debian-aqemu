@@ -1,0 +1,16 @@
+Description: This patch corrects some upstream spelling errors.
+Author: Ignace Mouzannar <mouzannar@gmail.com>
+Last-Update: 2011-06-04
+--- a/aqemu.1
++++ b/aqemu.1
+@@ -11,8 +11,8 @@
+ .SH DESCRIPTION
+ AQEMU is a Qt4 graphical interface used to manage QEMU and KVM virtual \
+ machines.
+-It has user-friendly interface and allows to set up the majority of QEMU and \
+-KVM options.
++It has user-friendly interface and allows one to set up the majority of QEMU \
++and KVM options.
+ 
+ .SH AUTHOR
+ Andrey Rijov <ANDron142@yandex.ru>
