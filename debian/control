@@ -2,12 +2,15 @@ Source: aqemu
 Section: x11
 Priority: optional
 Maintainer: Ignace Mouzannar <mouzannar@gmail.com>
-Build-Depends: debhelper (>= 7), dpatch, libvncserver-dev, libqt4-dev (>= 4.4), zlib1g-dev
-Standards-Version: 3.8.3
+Build-Depends: debhelper (>= 7), libvncserver-dev, libqt4-dev, zlib1g-dev, cmake
+Standards-Version: 3.9.1
+Homepage: http://aqemu.sourceforge.net/
+Vcs-Svn: svn://svn.debian.org/svn/collab-maint/ext-maint/aqemu/trunk/
+Vcs-Browser: http://svn.debian.org/viewsvn/collab-maint/ext-maint/aqemu/trunk/
+
 
 Package: aqemu
 Architecture: amd64 arm armel hppa i386 powerpc sparc ppc64
-Homepage: http://aqemu.sourceforge.net/
 Depends: qemu, ${shlibs:Depends}, ${misc:Depends}
 Description: Qt4 front-end for QEMU and KVM
  aqemu is a Qt4 graphical interface used to manage QEMU and KVM virtual

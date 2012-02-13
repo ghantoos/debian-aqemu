@@ -1,47 +1,5 @@
 #!/usr/bin/make -f
 # -*- makefile -*-
 
-include /usr/share/dpatch/dpatch.make
-
-configure: configure-stamp
-configure-stamp:
-	dh_testdir
-	# Using AQEMU.pro to build aqemu with VNC capabilities
-	/usr/bin/qmake-qt4 AQEMU.pro
-	touch configure-stamp
-
-build: build-stamp
-build-stamp: configure-stamp patch-stamp
-	dh_testdir
-	$(MAKE)
-	touch $@
-
-clean: unpatch
-	dh_testdir
-	rm -f build-stamp configure-stamp
-	dh_clean
-	/usr/bin/qmake-qt4 AQEMU.pro
-	$(MAKE) clean
-	rm -f Makefile* AQEMU
-
-install: build
-	$(MAKE) DESTDIR=$(CURDIR)/debian/aqemu install
-
-binary-arch: build install
-	dh_testroot -s
-	dh_install -s
-	dh_installchangelogs -s
-	dh_installdocs -s
-	dh_installman -s
-	dh_installmenu -s
-	dh_strip -s
-	dh_compress -s
-	dh_fixperms -s
-	dh_installdeb -s
-	dh_shlibdeps -s
-	dh_gencontrol -s
-	dh_md5sums -s
-	dh_builddeb -s
-
-binary: binary-arch
-.PHONY: build clean binary-arch binary install configure
+%:
+	dh $@

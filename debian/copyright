@@ -1,30 +1,53 @@
-This package was debianized by Ignace Mouzannar 
- on Sat, 23 Jun 2008 20:13:44 +0200.
+Format-Specification: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=135
+Name: aqemu
+Maintainer: Ignace Mouzannar <mouzannar@gmail.com>
+Source: http://aqemu.sourceforge.net/
 
-It was downloaded from http://aqemu.sourceforge.net/
+Files: *
+Copyright:
+    2008-2010 Andrey Rijov <ANDron142@yandex.ru>
+License: GPL-2
 
-Upstream Author:
+Files: 
+    Embedded_Display/Machine_View.cpp
+    Embedded_Display/Machine_View.h
+Copyright:
+    2008 Ben Klopfenstein <benklop@gmail.com>
+    2009-2010 Andrey Rijov <ANDron142@yandex.ru>
+License: GPL-2
 
-    Andrey Rijov <ANDron142@yandex.ru>
+Files: cmake/modules/CheckPointerMember.cmake
+Copyright:
+    2006, Alexander Neundorf <neundorf@kde.org>
+License: BSD
 
-Copyrights:
+Files: cmake/modules/FindLibVNCServer.cmake
+Copyright:
+    2006, Alessandro Praduroux <pradu@pradu.it>
+    2007, Urs Wolfer <uwolfer@kde.org>
+License: BSD
 
-    Unless specified otherwise, all files are:
-    Copyright (C) 2008-2009 Andrey Rijov <ANDron142@yandex.ru>
+Files: Embedded_Display/remoteview.cpp Embedded_Display/remoteview.h
+Copyright:
+    2002-2003 Tim Jansen <tim@tjansen.de>
+    2007-2008 Urs Wolfer <uwolfer@kde.org>
+License: GPL-2
 
-    Machine_View.cpp and Machine_View.h:
-    Copyright (C) 2008 Ben Klopfenstein <benklop@gmail.com>
+Files: 
+    Embedded_Display/vncclientthread.cpp
+    Embedded_Display/vncclientthread.h
+    Embedded_Display/vncview.cpp
+    Embedded_Display/vncview.h
+Copyright:
+    2007-2008 Urs Wolfer <uwolfer@kde.org>
+License: GPL-2
 
-    Remote_View.cpp and Remote_View.h:
-    Copyright (C) 2002-2003 Tim Jansen <tim@tjansen.de>
-    Copyright (C) 2007-2008 Urs Wolfer <uwolfer @ kde.org>
-    Copyright (C) 2009 Andrey Rijov <ANDron142@yandex.ru>
+Files: debian/*
+Copyright:
+    2009-2010, Ignace Mouzannar <mouzannar@gmail.com>
+License: GPL-2
 
-    VNC_Client_Thread.cpp, VNC_Client_Thread.h, VNC_View.cpp and VNC_View.h: 
-    Copyright (C) 2007-2008 Urs Wolfer <uwolfer @ kde.org>
-    Copyright (C) 2009 Andrey Rijov <ANDron142@yandex.ru>
-
-License:
+License: GPL-2
 
    This package is free software; you can redistribute it and/or modify
    it under the terms of the GNU General Public License as published by
@@ -39,5 +62,30 @@ License:
    You should have received a copy of the GNU General Public License
    along with this package; if not, see .
 
-On Debian systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL-2'.
+   On Debian systems, the complete text of the GNU General
+   Public License can be found in `/usr/share/common-licenses/GPL-2'.
+
+License: BSD
+
+   Redistribution and use in source and binary forms, with or without
+   modification, are permitted provided that the following conditions
+   are met:
+   
+   1. Redistributions of source code must retain the copyright
+      notice, this list of conditions and the following disclaimer.
+   2. Redistributions in binary form must reproduce the copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+   3. The name of the author may not be used to endorse or promote products 
+      derived from this software without specific prior written permission.
+   
+   THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+   IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+   OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+   IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+   INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+   NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+   DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+   THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

@@ -1,3 +1,53 @@
+aqemu (0.8.1-1) unstable; urgency=low
+
+  * New upstream release:
+    - Corrects the mouse pointer bug. (Closes: #607947)
+  * debian/clean:
+    - Added remaining .rcc files.
+  * debian/aqemu.1 and debian/aqemu.manpages:
+    - Removed files as a manpage is now distributed by upstream.
+  * debian/control:
+    - Removed version dependency on libqt4-dev as Debian Lenny already fulfills
+      this constraint.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Mon, 24 Jan 2011 12:13:37 +0100
+
+aqemu (0.8.0-1) unstable; urgency=low
+
+  * New upstream release.
+    - Corrects USB support. (Closes: #597480, LP: #588875)
+  * Converted the package to "3.0 (quilt)" source format.
+  * debian/control:
+    - Bumped Standards-Version to 3.9.1.
+    - Removed dependency on dpatch.
+    - Added dependency on cmake as the build now depends on it.
+    - Added Vcs-Svn and Vcs-Browser.
+  * debian/patches:
+    - 10_install_script.dpatch: Removed patch as upstream changed the 
+      installation method. Patched file does not exist anymore.
+  * debian/rules:
+    - Updated to use dh7 features.
+  * debian/source/format:
+    - New file set to "3.0 (quilt)".
+  * debian/clean:
+    - New file. Lists remaining .bz2 files to cleanup.
+  * debian/copyright:
+    - Updated the copyright format.
+    - Modified copyright mentions for the following files, as they have been
+      renamed by upstream: Remote_View.cpp, Remote_View.h, 
+      VNC_Client_Thread.cpp, VNC_Client_Thread.h, VNC_View.cpp and VNC_View.h.
+    - Updated copyright dates for Andrey Rijov from 2009 to 2010.
+    - Updated copyright on files Machine_View.cpp and Machine_View.h.
+    - Added copyright mentions for files CheckPointerMember.cmake and
+      FindLibVNCServer.cmake.
+    - Added copyright on debian/* files.
+  * Removed files debian/README.source and aqemu.docs as the dpatch mention 
+    is not needed anymore.
+  * Removed postinst and postrm files, as the update-menu is automatically
+    added by dh_installmenu.
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Sun, 21 Nov 2010 18:04:11 +0100
+
 aqemu (0.7.3-1) unstable; urgency=low
 
   * New upstream release.
