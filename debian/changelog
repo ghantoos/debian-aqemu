@@ -1,3 +1,15 @@
+aqemu (0.8.2-2) unstable; urgency=low
+
+  * debian/control:
+    - Bumped Standrards-Version to 3.9.3. No changes needed.
+    - Added Recommends on qemu-kvm. (Closes: #645226)
+  * debian/copyright:
+    - Updated to fit new format specifications of DEP5 (rev. 202).
+  * debian/patches:
+    - 02_qt4.8_ftbs.diff: Fixes FTBS with Qt4.8 (Closes: #672011)
+
+ -- Ignace Mouzannar <mouzannar@gmail.com>  Tue, 08 May 2012 17:57:50 +0400
+
 aqemu (0.8.2-1) unstable; urgency=low
 
   * New upstream release.

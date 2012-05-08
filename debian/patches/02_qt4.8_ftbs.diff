@@ -1,0 +1,18 @@
+Description: Fix build error on Qt 4.8.
+Author: Andrey Rijov <rdron@users.sourceforge.net>
+Last-Update: Sat, 29 Oct 2011 06:20:32 +0000 (10:20 +0400)
+Origin: upstream, http://aqemu.git.sourceforge.net/git/gitweb.cgi?p=aqemu/aqemu;a=commit;h=9b21d88a4f4a681f9e80c11e83e81c976e0fc91e
+
+--- a/Embedded_Display/vncview.cpp
++++ b/Embedded_Display/vncview.cpp
+@@ -27,8 +27,8 @@
+     #include <QMessageBox>
+     #include <QInputDialog>
+     #define KMessageBox QMessageBox
+-    #define error(parent, message, caption) \
+-        critical(parent, caption, message)
++/*    #define error(parent, message, caption) \
++        critical(parent, caption, message)*/
+ #else
+     #include "settings.h"
+     #include <KActionCollection>
